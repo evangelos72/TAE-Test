@@ -22,7 +22,21 @@ GALLERY_1_URL = 'https://thehub.rferl.org/a/32591003.html'
 GALLERY_1_HEADER = 'Kyrgyz Nomads'
 GALLERY_1_PUBLICATION_DATE = 'September 13, 2023'
 GALLERY_1_INITIAL_IMAGE_COUNT = 4
-GALLERY_1_EXPECTED_CAPTION_TEXT = 'KYRGYZSTAN NOMADS'
+GALLERY_1_EXPECTED_CAPTION_TEXT = [ 
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS',
+    'KYRGYZSTAN NOMADS'
+]
 GALLERY_1_CLICK_TIMES = 3
 GALLERY_1_TOTAL_IMAGES = 13
 
@@ -31,7 +45,18 @@ GALLERY_2_URL = 'https://thehub.rferl.org/a/georgia-politics/33167663.html'
 GALLERY_2_HEADER = 'PHOTO PACKAGE: GEORGIA VOTES FOR EU'
 GALLERY_2_PUBLICATION_DATE = 'October 22, 2024'
 GALLERY_2_INITIAL_IMAGE_COUNT = 4
-GALLERY_2_EXPECTED_CAPTION_TEXT = 'Georgia votes for EU, Tbilisi, October 20, 2024'
+GALLERY_2_EXPECTED_CAPTION_TEXT = [
+    'Georgia votes for EU, Tbilisi, October 20, 2024',
+    'Supporters of Georgia\'s pro-Western and pro-EU opposition groups hold a joint final campaign rally ahead of the upcoming parliamentary elections in Tbilisi',
+    'Georgia votes for EU',
+    'Georgia votes for EU',
+    'Georgia votes for EU',
+    'Demonstrators march during an opposition rally ahead upcoming next week parliamentary election ',
+    'Georgia votes for EU',
+    'Georgia votes for EU',
+    'Georgia -- Loudspeakers (band). Georgia votes for EU',
+    'Georgia votes for EU'
+]
 GALLERY_2_CLICK_TIMES = 2
 GALLERY_2_TOTAL_IMAGES = 10
 

@@ -23,5 +23,5 @@ Verify Images and Captions
     [Arguments]    ${expected_image_count}    ${expected_caption}
     Verify Image Count                   ${expected_image_count}
     FOR    ${index}    IN RANGE    1     ${expected_image_count}+1
-        Verify Image Caption             ${index}    ${expected_caption}
+        Verify Image Caption             ${index}    ${expected_caption}[${index-1}]
     END
