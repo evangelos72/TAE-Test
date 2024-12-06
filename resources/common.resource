@@ -49,7 +49,7 @@ Input Custom Text
     Wait Until Element Is Visible         ${element_locator}
     Input Text                            ${element_locator}    ${text}
 
-Compare Element Values
+Verify Element Values Are Equal
     [Documentation]    Compare ${element_locator} value with the ${expected_value}
     [Arguments]        ${element_locator}    ${expected_value}
     ${actual_value}=    Get Value          ${element_locator}

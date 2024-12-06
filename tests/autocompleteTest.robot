@@ -10,10 +10,10 @@ Variables         ../resources/test-data.py
 *** Test Cases *** 
 Autocomplete Test
     [Documentation]    This is the test for task 4
-    common.Begin Test                   ${AUTOCOMPLETE_URL}
-    common.Input Custom Text            ${AUTOCOMPLETE_COMBO_BOX}          ${AUTOCOMPLETE_TEXT}
-    common.Click Button                 ${AUTOCOMPLETE_SELECTION_VALUE}    1
-    common.Compare Element Values       ${AUTOCOMPLETE_COMBO_BOX}          ${AUTOCOMPLETE_EXPECTED_TEXT}
-    common.Click Button                 ${AUTOCOMPLETE_CLEAR_BUTTON}       1
-    common.Compare Element Values       ${AUTOCOMPLETE_COMBO_BOX}          ${EMPTY}
+    common.Begin Test                         ${AUTOCOMPLETE_URL}
+    common.Input Custom Text                  ${AUTOCOMPLETE_COMBO_BOX}          ${AUTOCOMPLETE_TEXT}
+    common.Click Button                       ${AUTOCOMPLETE_SELECTION_VALUE}    1
+    common.Verify Element Values Are Equal    ${AUTOCOMPLETE_COMBO_BOX}          ${AUTOCOMPLETE_EXPECTED_TEXT}
+    common.Click Button                       ${AUTOCOMPLETE_CLEAR_BUTTON}       1
+    common.Verify Element Values Are Equal    ${AUTOCOMPLETE_COMBO_BOX}          ${EMPTY}
     common.End Test
