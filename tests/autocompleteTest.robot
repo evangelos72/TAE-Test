@@ -9,6 +9,7 @@ Variables         ../resources/test-data.py
 
 *** Test Cases *** 
 Autocomplete Test
+    [Documentation]    This is the test for task 4
     common.Begin Test                   ${AUTOCOMPLETE_URL}
     common.Input Custom Text            ${AUTOCOMPLETE_COMBO_BOX}          ${AUTOCOMPLETE_TEXT}
     common.Click Button                 ${AUTOCOMPLETE_SELECTION_VALUE}    1

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.0 on win32)" generated="2024-12-06T19:55:27.224900" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\development\robot-scripts\TAE Test\tests">
+<suite id="s1-s1" name="customListTest" source="C:\development\robot-scripts\TAE Test\tests\customListTest.robot">
+<test id="s1-s1-t1" name="Modify and Print List" line="11">
+<kw name="Modify List" owner="CustomLibrary">
+<msg time="2024-12-06T19:55:27.261896" level="INFO">${modified_list} = ['/test/123/-item1', '/test/123/-item2', '/test/123/-item3', '/test/123/-item4']</msg>
+<var>${modified_list}</var>
+<arg>${MY_LIST}</arg>
+<arg>/test/123/</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2024-12-06T19:55:27.256883" elapsed="0.005013"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-06T19:55:27.261896" level="INFO">The modified list is ['/test/123/-item1', '/test/123/-item2', '/test/123/-item3', '/test/123/-item4']</msg>
+<arg>The modified list is ${modified_list}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-06T19:55:27.261896" elapsed="0.001010"/>
+</kw>
+<doc>This is the test for task 3</doc>
+<status status="PASS" start="2024-12-06T19:55:27.256883" elapsed="0.006023"/>
+</test>
+<status status="PASS" start="2024-12-06T19:55:27.252879" elapsed="0.010027"/>
+</suite>
+<status status="PASS" start="2024-12-06T19:55:27.235682" elapsed="0.027224"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="customListTest">Tests.customListTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

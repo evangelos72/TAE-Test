@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.0 on win32)" generated="2024-12-06T19:55:27.256883" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\development\robot-scripts\TAE Test\tests">
+<suite id="s1-s1" name="callendarTest" source="C:\development\robot-scripts\TAE Test\tests\callendarTest.robot">
+<test id="s1-s1-t1" name="Calendar Test" line="8">
+<kw name="Begin Test" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-06T19:55:27.505120" level="INFO">Opening browser 'chrome' to base url 'https://www.rferl.org/z/16733'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-06T19:55:27.504117" elapsed="4.188232"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-06T19:55:31.693434" elapsed="0.052310"/>
+</kw>
+<arg>${CALENDAR_URL}</arg>
+<doc>Opens the browser and navigates to ${url} with maximized browser window</doc>
+<status status="PASS" start="2024-12-06T19:55:27.503113" elapsed="4.242631"/>
+</kw>
+<kw name="Click Button" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-06T19:55:31.751368" elapsed="0.027002"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-06T19:55:31.778370" elapsed="0.023590"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-06T19:55:31.801960" elapsed="0.283061"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-06T19:55:32.086025" level="INFO">Clicking element 'css:.ico-calendar'.</msg>
+<arg>${button_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-06T19:55:32.085021" elapsed="0.104598"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-06T19:55:32.691222" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-06T19:55:32.189619" elapsed="0.501603"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-06T19:55:31.751368" elapsed="0.939854"/>
+</iter>
+<var>${index}</var>
+<value>${click_times}</value>
+<status status="PASS" start="2024-12-06T19:55:31.750398" elapsed="0.940824"/>
+</for>
+<arg>${CALENDAR}</arg>
+<arg>1</arg>
+<doc>Click the button identified by ${button_locator} ${click_times} times.</doc>
+<status status="PASS" start="2024-12-06T19:55:31.749284" elapsed="0.941938"/>
+</kw>
+<kw name="Click Button" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-06T19:55:32.694270" elapsed="0.016947"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-06T19:55:32.711217" elapsed="0.015441"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-06T19:55:32.726658" elapsed="0.261477"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-06T19:55:32.989160" level="INFO">Clicking element 'css:.ico-chevron-left-rounded'.</msg>
+<arg>${button_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-06T19:55:32.989160" elapsed="0.043211"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-06T19:55:33.533795" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-06T19:55:33.033371" elapsed="0.500424"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-06T19:55:32.694270" elapsed="0.839525"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-06T19:55:33.534299" elapsed="0.013532"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-06T19:55:33.547831" elapsed="0.017296"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-06T19:55:33.566127" elapsed="0.277179"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-06T19:55:33.843306" level="INFO">Clicking element 'css:.ico-chevron-left-rounded'.</msg>
+<arg>${button_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-06T19:55:33.843306" elapsed="0.042061"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-06T19:55:34.386876" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-06T19:55:33.886379" elapsed="0.500497"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-12-06T19:55:33.533795" elapsed="0.853081"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-06T19:55:34.386876" elapsed="0.017197"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-06T19:55:34.405081" elapsed="0.015990"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-06T19:55:34.421621" elapsed="0.272745"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-06T19:55:34.695495" level="INFO">Clicking element 'css:.ico-chevron-left-rounded'.</msg>
+<arg>${button_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-06T19:55:34.694366" elapsed="0.042821"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-06T19:55:35.238430" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-06T19:55:34.738186" elapsed="0.500743"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-12-06T19:55:34.386876" elapsed="0.852053"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-06T19:55:35.239469" elapsed="0.011011"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-06T19:55:35.250480" elapsed="0.010734"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-06T19:55:35.261214" elapsed="0.269120"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-06T19:55:35.531594" level="INFO">Clicking element 'css:.ico-chevron-left-rounded'.</msg>
+<arg>${button_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-06T19:55:35.530334" elapsed="0.040990"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-06T19:55:36.071395" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-06T19:55:35.571324" elapsed="0.500071"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-12-06T19:55:35.238929" elapsed="0.832466"/>
+</iter>
+<var>${index}</var>
+<value>${click_times}</value>
+<status status="PASS" start="2024-12-06T19:55:32.693490" elapsed="3.377905"/>
+</for>
+<arg>${CALENDAR_LEFT_BUTTON}</arg>
+<arg>${CALENDAR_CLICK_TIMES}</arg>
+<doc>Click the button identified by ${button_locator} ${click_times} times.</doc>
+<status status="PASS" start="2024-12-06T19:55:32.693490" elapsed="3.377905"/>
+</kw>
+<kw name="Click Button" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-06T19:55:36.074415" elapsed="0.011808"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-06T19:55:36.086223" elapsed="0.011673"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${button_locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-06T19:55:36.098918" elapsed="0.262796"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-06T19:55:36.362719" level="INFO">Clicking element 'css:tr.calendar__table-row--daysrow:nth-child(3) &gt; td:nth-child(2) &gt; a:nth-child(1)'.</msg>
+<arg>${button_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-06T19:55:36.362719" elapsed="0.542097"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-06T19:55:37.405970" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-06T19:55:36.904816" elapsed="0.501154"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-06T19:55:36.073410" elapsed="1.332560"/>
+</iter>
+<var>${index}</var>
+<value>${click_times}</value>
+<status status="PASS" start="2024-12-06T19:55:36.073410" elapsed="1.332560"/>
+</for>
+<arg>${CALENDAR_DATE}</arg>
+<arg>1</arg>
+<doc>Click the button identified by ${button_locator} ${click_times} times.</doc>
+<status status="PASS" start="2024-12-06T19:55:36.073410" elapsed="1.332560"/>
+</kw>
+<kw name="Verify Header Text" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-06T19:55:37.405970" elapsed="0.015747"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-06T19:55:37.434620" level="INFO">${actual_text} = Monday 12 August 2024</msg>
+<var>${actual_text}</var>
+<arg>${header_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-06T19:55:37.422222" elapsed="0.012398"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${expected_text}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-12-06T19:55:37.434620" elapsed="0.000000"/>
+</kw>
+<arg>${CALENDAR_HEADER}</arg>
+<arg>${CALENDAR_HEADER_TEXT}</arg>
+<doc>Verify that the header identified by ${header_locator} contains the expected text ${expected_text}.</doc>
+<status status="PASS" start="2024-12-06T19:55:37.405970" elapsed="0.028650"/>
+</kw>
+<kw name="End Test" owner="common">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-06T19:55:37.437125" elapsed="2.115967"/>
+</kw>
+<doc>Closes the browser</doc>
+<status status="PASS" start="2024-12-06T19:55:37.437125" elapsed="2.115967"/>
+</kw>
+<doc>This test is for Task 5 - Calendar</doc>
+<status status="PASS" start="2024-12-06T19:55:27.502074" elapsed="12.051018"/>
+</test>
+<status status="PASS" start="2024-12-06T19:55:27.285493" elapsed="12.267599"/>
+</suite>
+<status status="PASS" start="2024-12-06T19:55:27.271948" elapsed="12.281144"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="callendarTest">Tests.callendarTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

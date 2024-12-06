@@ -7,10 +7,10 @@ PUBLICATION_DATE = 'css:time[pubdate="pubdate"]'
 VIDEO_BIG_PLAY_BUTTON = 'css:.c-mmp__big_play_btn'
 VIDEO_SMALL_PLAY_BUTTON = 'css:.c-mmp__cpanel-btn--play'
 VIDEO_PAUSE_BUTTON = 'css:.ico-pause'
-CALLENDAR = 'css:.ico-calendar'
-CALLENDAR_LEFT_BUTTON = 'css:.ico-chevron-left-rounded'
+CALENDAR = 'css:.ico-calendar'
+CALENDAR_LEFT_BUTTON = 'css:.ico-chevron-left-rounded'
 CALENDAR_DATE = 'css:tr.calendar__table-row--daysrow:nth-child(3) > td:nth-child(2) > a:nth-child(1)'
-CALLENDAR_HEADER = 'css:h2.date'
+CALENDAR_HEADER = 'css:h2.date'
 AUTOCOMPLETE_COMBO_BOX = 'id:combo-box-demo'
 AUTOCOMPLETE_CLEAR_BUTTON = '//*[@title="Clear"]' 
 
@@ -70,8 +70,8 @@ VIDEO_PUBLICATION_DATE = 'March 18, 2024 19:36 GMT'
 
 #Calendar - TASK 5
 CALENDAR_URL = 'https://www.rferl.org/z/16733'
-CALLENDAR_HEADER_TEXT = 'Monday 12 August 2024'
-CALLENDAR_CLICK_TIMES = 4
+CALENDAR_HEADER_TEXT = 'Monday 12 August 2024'
+CALENDAR_CLICK_TIMES = 4
 
 #Autocomplete - TASK 4
 AUTOCOMPLETE_URL = 'https://v4.mui.com/components/autocomplete/'

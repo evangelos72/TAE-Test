@@ -9,5 +9,6 @@ Library    ../resources/CustomLibrary.py
 
 *** Test Cases ***
 Modify and Print List
+    [Documentation]    This is the test for task 3
     ${modified_list}=    Modify List   ${MY_LIST}   /test/123/    ${EMPTY}
     Log    The modified list is ${modified_list}
