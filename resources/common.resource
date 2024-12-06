@@ -4,9 +4,9 @@ Variables      test-data.py
 
 *** Keywords ***
 Begin Test
-    [Documentation]    Opens the ${browser} and navigates to ${url} with maximized browser window
-    [Arguments]    ${url}    ${browser}
-    Open Browser   ${url}    ${browser}
+    [Documentation]    Opens the browser and navigates to ${url} with maximized browser window
+    [Arguments]    ${url}
+    Open Browser   ${url}    ${BROWSER}
     Maximize Browser Window
 
 End Test

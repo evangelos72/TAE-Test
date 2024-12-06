@@ -1,5 +1,5 @@
 #test-data.py
-
+BROWSER = 'chrome'
 #CSS Selectors
 LOAD_MORE_BUTTON = 'css:a.btn.link-showMore.btn__text'
 HEADER = 'css:h1'
