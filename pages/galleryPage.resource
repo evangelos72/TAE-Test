@@ -16,12 +16,12 @@ Verify Image Caption
     ${caption_xpath}=    Set Variable    (//div[@class='img-desc img-desc--inverted d-flex']//span[contains(@class, 'caption caption--inverted')])[${index}]
     Wait Until Element Is Visible        ${caption_xpath}    timeout=2s
     ${actual_caption}=    Get Text       ${caption_xpath}
-    Should Be Equal                      ${actual_caption}    ${expected_caption}
+    Should Be Equal                      ${actual_caption}   ${expected_caption}
 
 Verify Images and Captions
     [Documentation]    Verify the image count and captions of a list of images based on the ${expected_image_count} and ${expected_caption}
     [Arguments]    ${expected_image_count}    ${expected_caption}
     Verify Image Count                   ${expected_image_count}
     FOR    ${index}    IN RANGE    1     ${expected_image_count}+1
-        Verify Image Caption             ${index}    ${expected_caption}[${index-1}]
+        Verify Image Caption             ${index}            ${expected_caption}[${index-1}]
     END

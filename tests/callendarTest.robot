@@ -1,4 +1,4 @@
-#Task 2 - Video
+#(Optional) Task 5 – Calendar
 *** Settings ***
 Resource          ../resources/common.resource
 Variables         ../resources/test-data.py

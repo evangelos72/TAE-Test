@@ -11,10 +11,13 @@ CALLENDAR = 'css:.ico-calendar'
 CALLENDAR_LEFT_BUTTON = 'css:.ico-chevron-left-rounded'
 CALENDAR_DATE = 'css:tr.calendar__table-row--daysrow:nth-child(3) > td:nth-child(2) > a:nth-child(1)'
 CALLENDAR_HEADER = 'css:h2.date'
+AUTOCOMPLETE_COMBO_BOX = 'id:combo-box-demo'
+AUTOCOMPLETE_CLEAR_BUTTON = '//*[@title="Clear"]' 
 
 #XPaths
 IMAGES = 'xpath://div[@class="img-wrap img-wrap--gallery"]'
 IMAGE_CAPTION = '(xpath://div[@class="img-desc img-desc--inverted d-flex"]//span[contains(@class, "caption caption--inverted")])[{}]'
+AUTOCOMPLETE_SELECTION_VALUE = 'xpath://li[text()=\'The Godfather: Part II\']'
 
 #Test Data
 #Gallery 1 - TASK 1
@@ -69,3 +72,8 @@ VIDEO_PUBLICATION_DATE = 'March 18, 2024 19:36 GMT'
 CALENDAR_URL = 'https://www.rferl.org/z/16733'
 CALLENDAR_HEADER_TEXT = 'Monday 12 August 2024'
 CALLENDAR_CLICK_TIMES = 4
+
+#Autocomplete - TASK 4
+AUTOCOMPLETE_URL = 'https://v4.mui.com/components/autocomplete/'
+AUTOCOMPLETE_TEXT = 'The Godfather'
+AUTOCOMPLETE_EXPECTED_TEXT = 'The Godfather: Part II'
