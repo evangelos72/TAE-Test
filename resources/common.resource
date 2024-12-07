@@ -56,6 +56,7 @@ Scroll To Element
     Execute Javascript  window.scrollTo(${horizontal_position}, ${vertical_position})
 
 Hover Over Element
+    [Documentation]    Hover over the given ${locator}
     [Arguments]    ${locator}
     Mouse Over                            ${locator}
     Wait Until Element Is Enabled         ${locator}   
