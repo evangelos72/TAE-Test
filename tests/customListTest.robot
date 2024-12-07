@@ -1,6 +1,5 @@
 #Task 3 - Custom RF library in Python
 *** Settings ***
-
 Library    ../resources/CustomLibrary.py
 
 *** Variables ***

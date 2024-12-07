@@ -6,7 +6,7 @@ Variables      test-data.py
 Begin Test
     [Documentation]    Opens the browser and navigates to ${url} with maximized browser window
     [Arguments]    ${url}
-    Open Browser                         ${url}            ${BROWSER}
+    Open Browser                         ${url}               ${BROWSER}
     Maximize Browser Window
 
 End Test
@@ -17,7 +17,7 @@ Click Button
     [Documentation]    Click the button identified by ${button_locator} ${click_times} times.
     [Arguments]        ${button_locator}    ${click_times}
     FOR    ${index}    IN RANGE    ${click_times}
-        Wait Until Element Is Visible    ${button_locator}
+        Wait Until Element Is Visible    ${button_locator}    timeout=10s
         Wait Until Element Is Enabled    ${button_locator}
         Scroll Element Into View         ${button_locator}
         Click Element                    ${button_locator}

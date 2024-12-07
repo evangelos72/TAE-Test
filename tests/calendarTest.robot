@@ -10,6 +10,6 @@ Calendar Test
     common.Begin Test                ${CALENDAR_URL}             
     common.Click Button              ${CALENDAR}                1    
     common.Click Button              ${CALENDAR_LEFT_BUTTON}    ${CALENDAR_CLICK_TIMES}
-    common.Click Button              ${CALENDAR_DATE}            1
+    common.Click Button              ${CALENDAR_DATE}           1
     common.Verify Header Text        ${CALENDAR_HEADER}         ${CALENDAR_HEADER_TEXT}
     common.End Test

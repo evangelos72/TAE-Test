@@ -8,7 +8,7 @@ Verify Image Count
     [Arguments]    ${expected_count}
     ${images}=    Get WebElements        ${IMAGES}
     ${actual_count}=    Get Length       ${images}
-    Should Be Equal As Numbers           ${actual_count}    ${expected_count}
+    Should Be Equal As Numbers           ${actual_count}     ${expected_count}
 
 Verify Image Caption
     [Documentation]    Verify the image caption of the image based on the ${index} and ${expected_caption}
