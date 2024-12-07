@@ -14,7 +14,7 @@ AUTOCOMPLETE_COMBO_BOX = 'id:combo-box-demo'
 
 #XPaths
 IMAGES = 'xpath://div[@class="img-wrap img-wrap--gallery"]'
-IMAGE_CAPTION = '(xpath://div[@class="img-desc img-desc--inverted d-flex"]//span[contains(@class, "caption caption--inverted")])[{}]'
+IMAGE_CAPTION = '//span[@class="caption caption--inverted"]'
 AUTOCOMPLETE_SELECTION_VALUE = 'xpath://li[text()=\'The Godfather: Part II\']'
 AUTOCOMPLETE_CLEAR_BUTTON = '//*[@title="Clear"]' 
 
