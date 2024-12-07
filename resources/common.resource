@@ -61,3 +61,8 @@ Scroll To Element
     ${horizontal_position}=      Get Horizontal Position     ${locator}
     ${vertical_position}=        Get Vertical Position       ${locator}
     Execute Javascript  window.scrollTo(${horizontal_position}, ${vertical_position})
+
+Hover Over Element
+    [Arguments]    ${locator}
+    Mouse Over                            ${locator}
+    Wait Until Element Is Enabled         ${locator}   

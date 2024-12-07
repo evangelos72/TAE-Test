@@ -122,3 +122,12 @@ __pycache__/
 tests/__pycache__/
 resources/__pycache__/
 /pycache/*
+geckodriver-54.log
+geckodriver-55.log
+geckodriver-56.log
+geckodriver-57.log
+geckodriver-58.log
+geckodriver-59.log
+selenium-screenshot-41.png
+resources/__pycache__/test-data.cpython-312.pyc
+resources/__pycache__/test-data.cpython-312.pyc
