@@ -11,7 +11,7 @@ Video Test
     common.Begin Test                          ${VIDEO_URL}                 
     common.Verify Header Text                  ${HEADER}                   ${VIDEO_HEADER}    
     common.Verify Publication Date             ${VIDEO_PUBLICATION_DATE}       
-    common.Click Button                        ${VIDEO_SMALL_PLAY_BUTTON}    1
+    common.Click Button                        ${VIDEO_SMALL_PLAY_BUTTON}  1
     videoPage.Verify The Video Plays
     videoPage.Pause The Video
     common.End Test
