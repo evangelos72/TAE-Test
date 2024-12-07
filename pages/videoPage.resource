@@ -1,3 +1,4 @@
+#Resource that contains all the necessary keywords for the video page
 *** Settings ***
 Library        SeleniumLibrary
 Variables      ../resources/test-data.py

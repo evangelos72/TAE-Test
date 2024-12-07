@@ -1,3 +1,4 @@
+#Resource that contains common keywords that can be used in any test case
 *** Settings ***
 Library        SeleniumLibrary
 Variables      test-data.py

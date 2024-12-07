@@ -1,3 +1,4 @@
+#Custom python library that contains methods that can be used in any test
 class CustomLibrary:
 
     def modify_list(self, original_list, string1='', string2=''):
