@@ -18,7 +18,8 @@ Gallery Test Template
     common.Verify Header Text                     ${HEADER}              ${expected_text}
     common.Verify Publication Date                ${expected_date}
     galleryPage.Verify Image Count                ${image_count}
+    common.Scroll To Element                      ${LOAD_MORE_BUTTON} 
     common.Click Button                           ${LOAD_MORE_BUTTON}    ${click_times}
     galleryPage.Verify Images and Captions        ${total_images}        ${expected_caption}
-    common.Verify Element Is Not Visible          ${LOAD_MORE_BUTTON}        
+    common.Verify Element Is Not Visible          ${LOAD_MORE_BUTTON}    
     common.End Test

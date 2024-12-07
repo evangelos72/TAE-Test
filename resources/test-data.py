@@ -12,12 +12,12 @@ CALENDAR_LEFT_BUTTON = 'css:.ico-chevron-left-rounded'
 CALENDAR_DATE = 'css:tr.calendar__table-row--daysrow:nth-child(3) > td:nth-child(2) > a:nth-child(1)'
 CALENDAR_HEADER = 'css:h2.date'
 AUTOCOMPLETE_COMBO_BOX = 'id:combo-box-demo'
-AUTOCOMPLETE_CLEAR_BUTTON = '//*[@title="Clear"]' 
 
 #XPaths
 IMAGES = 'xpath://div[@class="img-wrap img-wrap--gallery"]'
 IMAGE_CAPTION = '(xpath://div[@class="img-desc img-desc--inverted d-flex"]//span[contains(@class, "caption caption--inverted")])[{}]'
 AUTOCOMPLETE_SELECTION_VALUE = 'xpath://li[text()=\'The Godfather: Part II\']'
+AUTOCOMPLETE_CLEAR_BUTTON = '//*[@title="Clear"]' 
 
 #Test Data
 #Gallery 1 - TASK 1
