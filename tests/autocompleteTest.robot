@@ -1,5 +1,5 @@
 #Task 4 – MaterialUI Autocomplete component
-#In order to get inspect the combo box values i used developer tools and pause the debugger once the combo box value i need was visible 
+#In order to be able inspect the 'combo box' element values I used the developer tools and paused the debugger
 #Example -> setTimeout(function(){debugger;},5000) 
 
 *** Settings ***

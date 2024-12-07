@@ -13,5 +13,5 @@ Video Test
     common.Verify Publication Date             ${VIDEO_PUBLICATION_DATE}       
     common.Click Button                        ${VIDEO_SMALL_PLAY_BUTTON}  1
     videoPage.Verify The Video Plays
-    videoPage.Pause The Video
+    videoPage.Verify The Video Is Paused
     common.End Test
