@@ -13,4 +13,4 @@ Verify The Video Is Paused
     [Documentation]    Verify that the video is paused by clicking the pause button, verifying that the pause button is no longer visible and the play button is visible
     Click Element                        ${VIDEO_PAUSE_BUTTON}
     Wait Until Element Is Not Visible    ${VIDEO_PAUSE_BUTTON}
-    Wait Until Element Is Enabled        ${VIDEO_SMALL_PLAY_BUTTON}
+    Wait Until Element Is Enabled        ${VIDEO_PLAY_BUTTON}
