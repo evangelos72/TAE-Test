@@ -118,3 +118,7 @@ selenium-screenshot-37.png
 selenium-screenshot-38.png
 selenium-screenshot-39.png
 selenium-screenshot-40.png
+__pycache__/
+tests/__pycache__/
+resources/__pycache__/
+/pycache/*

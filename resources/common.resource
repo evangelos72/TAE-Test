@@ -57,6 +57,7 @@ Verify Element Values Are Equal
 Scroll To Element
     [Documentation]    Created this custom scroll method to solve 'movetargetoutofboundsexception' on firefox
     [Arguments]  ${locator}
+    Wait Until Element Is Visible        ${locator}
     ${horizontal_position}=      Get Horizontal Position     ${locator}
     ${vertical_position}=        Get Vertical Position       ${locator}
     Execute Javascript  window.scrollTo(${horizontal_position}, ${vertical_position})
