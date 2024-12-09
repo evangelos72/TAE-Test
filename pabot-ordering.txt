@@ -1,0 +1,9 @@
+--suite videoTest
+#WAIT
+--suite galleryTest
+#WAIT
+--suite calendarTest
+#WAIT
+--suite autocompleteTest
+#WAIT
+--suite customListTest

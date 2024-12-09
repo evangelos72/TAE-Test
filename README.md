@@ -17,6 +17,10 @@ robot tests/videoTest.robot tests/galleryTest.robot
 ```bash
 pabot --testlevelsplit tests/
 ```
+## How to run tests from slowest to fastest suite
+```bash
+pabot --ordering pabot-ordering.txt tests/
+```
 ## How to run all tests with specified browser
 ```bash
 robot --variable BROWSER:firefox tests/
